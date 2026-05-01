@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Rehan Khalid — AI Engineer · LLM Systems · Agentic AI</title>
+  <meta name="description" content="AI Engineer specializing in LLM systems, Retrieval-Augmented Generation, agentic workflows, and scalable production ML platforms. 5+ years of experience across fintech, autonomous driving, and legal NLP." />
+  <meta name="keywords" content="AI Engineer, LLM, Large Language Models, RAG, Agentic AI, LangGraph, LangChain, LlamaIndex, PEFT, LoRA, QLoRA, Fine-tuning, Retrieval Augmented Generation, Vector Databases, Weaviate, MLOps, FastAPI, PyTorch, Hugging Face, Transformers, Prompt Engineering, NLP, Machine Learning Engineer, Munich, Germany" />
+  <meta name="author" content="Muhammad Rehan Khalid" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammad Rehan Khalid — AI Engineer · LLM Systems" />
+  <meta property="og:description" content="AI Engineer specializing in LLM systems, RAG, and agentic AI. Currently building DocGPT at CHECK24." />
+  <meta property="og:image" content="assets/profile.png" />
+
+  <link rel="icon" type="image/png" href="assets/profile.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-mark">MRK</span>
+        <span class="brand-text">Muhammad Rehan Khalid</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="assets/CV.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> Open to AI Engineer / LLM roles · Munich, Germany</p>
+        <h1>
+          Hi, I'm <span class="grad">Muhammad Rehan Khalid</span>.
+        </h1>
+        <h2 class="hero-sub">AI Engineer · LLM Systems · Agentic AI · MLOps</h2>
+        <p class="hero-lead">
+          I build production-grade <strong>LLM systems</strong>, <strong>RAG pipelines</strong>, and
+          <strong>agentic workflows</strong> that ship to real users. Currently shipping
+          <strong>DocGPT</strong> at <strong>CHECK24</strong> — serving 80K+ weekly API requests across
+          multiple verticals — while pursuing my MSc in Applied Data Science at the
+          University of Göttingen.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">View My Work →</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          <a class="btn btn-ghost" href="assets/CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>5+</strong><span>Years experience</span></div>
+          <div><strong>80K+</strong><span>Weekly API requests shipped</span></div>
+          <div><strong>7K+</strong><span>QA pairs curated for German Legal LLM</span></div>
+          <div><strong>$150K</strong><span>Annual fraud loss reduction</span></div>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:mrehank209@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.236-8 4.882-8-4.882V6l8 4.882L20 6z"/></svg>
+            <span>mrehank209@gmail.com</span>
+          </a>
+          <a href="https://github.com/MRehanK209" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.63 22.41c.58.1.79-.25.79-.56v-2.16c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.05 1.78 2.74 1.27 3.41.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.27-5.24-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.17a11.05 11.05 0 0 1 5.79 0c2.21-1.48 3.17-1.17 3.17-1.17.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.07 0 4.39-2.69 5.36-5.25 5.64.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-rehan-khalid/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2 1 9l11 7 9-5.73V17h2V9zM5 13.18v4L12 21l7-3.82v-4l-7 3.82z"/></svg>
+            <span>Scholar</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-ring">
+          <img src="assets/profile.png" alt="Muhammad Rehan Khalid" />
+        </div>
+        <div class="badge-stack">
+          <span class="badge"><span class="badge-dot"></span> Available May 2026</span>
+          <span class="badge subtle">Munich · Remote · Hybrid</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ ABOUT (terminal) ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow">01 — About</p>
+      <h2 class="section-title">Building <span class="grad">LLM systems</span> that ship.</h2>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I'm an AI Engineer with 5+ years of project experience across LLM applications,
+            RAG, fine-tuning, MLOps, and large-scale fraud / propensity modelling. I love the
+            full lifecycle — from <strong>data curation</strong> and <strong>retrieval design</strong>
+            to <strong>fine-tuning</strong>, <strong>evaluation</strong>, and shipping behind a
+            <strong>FastAPI</strong> service with proper <strong>monitoring</strong>.
+          </p>
+          <p>
+            Right now I'm at <strong>CHECK24</strong> building the
+            <strong>DocGPT</strong> RAG platform — multi-format ingestion (PDF / DOCX / PPT / Notion / web),
+            hybrid BM25 + vector retrieval on Weaviate, re-ranking and query rewriting, and
+            agentic OCR pre-processing for the Autoteile vertical. I previously fine-tuned
+            German legal LLMs at <strong>Fraunhofer IAIS</strong> and built geospatial MLOps
+            dashboards at <strong>Fraunhofer IVI</strong>.
+          </p>
+          <p>
+            My MSc thesis explores <strong>Recurrent Chain-of-Thought reasoning in
+            Diffusion-based LLMs</strong> — pushing reasoning quality on tasks like Countdown
+            and GSM8K beyond standard autoregressive baselines.
+          </p>
+          <p class="about-tags">
+            <span>LLM Fine-tuning (LoRA · QLoRA · PEFT)</span>
+            <span>RAG · Hybrid Retrieval</span>
+            <span>Agentic Workflows</span>
+            <span>Diffusion LLMs</span>
+            <span>MLOps</span>
+            <span>FastAPI · Docker · K8s</span>
+          </p>
+        </div>
+
+        <div class="terminal" aria-hidden="false">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">rehan@munich:~ $ cat about.json</span>
+          </div>
+<pre class="terminal-body"><code><span class="tk-p">{</span>
+  <span class="tk-k">"name"</span>: <span class="tk-s">"Muhammad Rehan Khalid"</span>,
+  <span class="tk-k">"role"</span>: <span class="tk-s">"AI Engineer · LLM Systems"</span>,
+  <span class="tk-k">"location"</span>: <span class="tk-s">"Munich, Germany"</span>,
+  <span class="tk-k">"current"</span>: <span class="tk-s">"Data Science Intern (LLM) @ CHECK24"</span>,
+  <span class="tk-k">"education"</span>: <span class="tk-s">"M.Sc. Applied Data Science, Göttingen"</span>,
+  <span class="tk-k">"focus"</span>: <span class="tk-p">[</span>
+    <span class="tk-s">"LLM Fine-tuning"</span>,
+    <span class="tk-s">"Retrieval-Augmented Generation"</span>,
+    <span class="tk-s">"Agentic Workflows"</span>,
+    <span class="tk-s">"Diffusion LLMs"</span>,
+    <span class="tk-s">"MLOps"</span>
+  <span class="tk-p">]</span>,
+  <span class="tk-k">"stack"</span>: <span class="tk-p">[</span>
+    <span class="tk-s">"PyTorch"</span>, <span class="tk-s">"Transformers"</span>, <span class="tk-s">"LangGraph"</span>,
+    <span class="tk-s">"LlamaIndex"</span>, <span class="tk-s">"Weaviate"</span>, <span class="tk-s">"FastAPI"</span>,
+    <span class="tk-s">"Docker"</span>, <span class="tk-s">"Kubernetes"</span>, <span class="tk-s">"AWS"</span>
+  <span class="tk-p">]</span>,
+  <span class="tk-k">"languages"</span>: <span class="tk-p">[</span>
+    <span class="tk-s">"English (Native)"</span>,
+    <span class="tk-s">"German (B1, learning)"</span>,
+    <span class="tk-s">"Urdu (Native)"</span>
+  <span class="tk-p">]</span>,
+  <span class="tk-k">"work_permit"</span>: <span class="tk-s">"Valid (Germany)"</span>,
+  <span class="tk-k">"notice_period"</span>: <span class="tk-s">"30 days"</span>,
+  <span class="tk-k">"status"</span>: <span class="tk-b">"open_to_work"</span>
+<span class="tk-p">}</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section alt" id="experience">
+    <div class="container">
+      <p class="section-eyebrow">02 — Experience</p>
+      <h2 class="section-title">Where I've shipped.</h2>
+
+      <ol class="timeline">
+
+        <li class="t-item">
+          <div class="t-meta">
+            <span class="t-period">Jul 2025 — Present</span>
+            <span class="t-loc">Munich, Germany</span>
+          </div>
+          <div class="t-card">
+            <header class="t-head">
+              <h3>Data Science Intern — LLM</h3>
+              <a class="t-org" href="https://www.check24.de/" target="_blank" rel="noopener">CHECK24 Vergleichsportal GmbH ↗</a>
+            </header>
+            <p class="t-project"><strong>DocGPT</strong> — AI document extraction & chat platform deployed across CHECK24 verticals.</p>
+            <ul>
+              <li>Implemented the <strong>Retrieval-Augmented Generation</strong> layer enabling long-document support beyond LLM context limits, onboarding new CHECK24 verticals.</li>
+              <li>Built multi-format ingestion (PDF, DOCX, PPT, web, Notion) with cleaning, deduplication, metadata tagging and chunking; embeddings stored in <strong>Weaviate</strong> for fast semantic retrieval.</li>
+              <li>Developed <strong>hybrid retrieval</strong> with BM25 + vector search, re-ranking, and query rewriting — improving grounded Q&amp;A and structured invoice / contract extraction into normalized JSON.</li>
+              <li>Built an <strong>agentic scan-preprocessing</strong> pipeline for CHECK24 Autoteile (Reifen): dewarping, deblurring and lighting / shadow correction to improve OCR &amp; LLM input quality.</li>
+              <li>Shipped a real-time <strong>monitoring dashboard</strong> for request volume, latency and error rates — reducing 5xx errors by ~15% and helping scale to <strong>80K+ weekly API requests</strong>.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>LLMs</span><span>RAG</span><span>Weaviate</span><span>BM25</span><span>Re-ranking</span><span>OCR</span><span>FastAPI</span><span>Monitoring</span></div>
+          </div>
+        </li>
+
+        <li class="t-item">
+          <div class="t-meta">
+            <span class="t-period">Dec 2024 — Jun 2025</span>
+            <span class="t-loc">Sankt Augustin, Germany</span>
+          </div>
+          <div class="t-card">
+            <header class="t-head">
+              <h3>Research Assistant — LLM</h3>
+              <a class="t-org" href="https://www.iais.fraunhofer.de/" target="_blank" rel="noopener">Fraunhofer IAIS ↗</a>
+            </header>
+            <p class="t-project"><strong>German Legal AI Assistant</strong> — domain-specialised QA platform on German legal documents.</p>
+            <ul>
+              <li>Curated a high-quality instruction dataset of <strong>7,000+ QA pairs</strong> from German legal documents using LLM-assisted curation.</li>
+              <li>Fine-tuned open-source LLMs with <strong>PEFT (LoRA, QLoRA)</strong> via <strong>Unsloth</strong> + PyTorch — improving response relevance by <strong>20%</strong>.</li>
+              <li>Built and optimised RAG pipelines: <strong>+16% context recall</strong>, <strong>+10% precision</strong>; fine-tuned cross-encoder re-rankers for a <strong>+15%</strong> search-relevance lift.</li>
+              <li>Automated evaluation with <strong>RAGAS</strong>, <strong>DeepEval</strong> and LLM-as-a-Judge for repeatable benchmarking.</li>
+            </ul>
+            <div class="tags"><span>PEFT</span><span>LoRA</span><span>QLoRA</span><span>Unsloth</span><span>PyTorch</span><span>RAGAS</span><span>DeepEval</span><span>RAG</span></div>
+          </div>
+        </li>
+
+        <li class="t-item">
+          <div class="t-meta">
+            <span class="t-period">Jan 2024 — Nov 2024</span>
+            <span class="t-loc">Dresden, Germany</span>
+          </div>
+          <div class="t-card">
+            <header class="t-head">
+              <h3>Research Assistant — MLOps</h3>
+              <a class="t-org" href="https://www.ivi.fraunhofer.de/" target="_blank" rel="noopener">Fraunhofer IVI ↗</a>
+            </header>
+            <p class="t-project"><strong>Autonomous Driving Signal Monitoring</strong> — geospatial MLOps for AD-drop and Roadside-Unit (RSU) status.</p>
+            <ul>
+              <li>Built <strong>Grafana</strong> dashboards for AD signal quality and AD-drop monitoring on top of OpenStreetMap data, enabling real-time outage alerting.</li>
+              <li>Enriched <strong>TimescaleDB</strong> datasets with RSU and bus-stop metadata, reducing query latency by <strong>40%</strong>.</li>
+              <li>Hardened TimescaleDB workflows with retention policies and integrity constraints to improve reliability.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>Grafana</span><span>TimescaleDB</span><span>PostgreSQL</span><span>Geospatial</span><span>MLOps</span></div>
+          </div>
+        </li>
+
+        <li class="t-item">
+          <div class="t-meta">
+            <span class="t-period">Dec 2021 — Aug 2023</span>
+            <span class="t-loc">Lahore, Pakistan</span>
+          </div>
+          <div class="t-card">
+            <header class="t-head">
+              <h3>Data Analyst</h3>
+              <a class="t-org" href="https://www.i2cinc.com/" target="_blank" rel="noopener">i2c Inc. ↗</a>
+            </header>
+            <p class="t-project"><strong>AI Fraud Detection Platform</strong> — real-time transaction monitoring used by US financial institutions.</p>
+            <ul>
+              <li>Led fraud-detection projects with ensemble models (<strong>XGBoost</strong>, <strong>LightGBM</strong>) and neural nets (<strong>TabNet</strong>, RNNs) — capturing <strong>40% more fraud at 1:5 FP odds</strong>.</li>
+              <li>Deployed real-time fraud-prevention models, reducing annual losses by <strong>$150K</strong> and improving detection response on high-risk transactions.</li>
+              <li>Engineered profiling pipelines generating rolling-window features (minutes → 30 days); reduced class imbalance from <strong>1:1000 to 1:100</strong> via principled sampling.</li>
+              <li>Enhanced Account-Takeover detection by integrating behavioural signals — <strong>−15% ATO cases</strong>.</li>
+            </ul>
+            <div class="tags"><span>XGBoost</span><span>LightGBM</span><span>TabNet</span><span>RNNs</span><span>Feature Engineering</span><span>Fraud Detection</span></div>
+          </div>
+        </li>
+
+        <li class="t-item">
+          <div class="t-meta">
+            <span class="t-period">Aug 2020 — Dec 2021</span>
+            <span class="t-loc">Lahore, Pakistan</span>
+          </div>
+          <div class="t-card">
+            <header class="t-head">
+              <h3>Data Scientist</h3>
+              <a class="t-org" href="https://www.afiniti.com/" target="_blank" rel="noopener">Afiniti ↗</a>
+            </header>
+            <p class="t-project"><strong>Customer Propensity Modelling Platform</strong> — customer-ranking models for revenue optimisation.</p>
+            <ul>
+              <li>Developed <strong>LightGBM</strong>-based propensity models for customer ranking — <strong>+10% revenue</strong> uplift.</li>
+              <li>Ran A/B tests and ROI analyses contributing to a <strong>+6% client-side sales</strong> uplift.</li>
+            </ul>
+            <div class="tags"><span>LightGBM</span><span>A/B Testing</span><span>ROI Analysis</span></div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-eyebrow">03 — Featured Projects</p>
+      <h2 class="section-title">Selected work.</h2>
+
+      <div class="projects-grid">
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">Master Thesis · 2025–2026</span>
+            <span class="badge subtle">In progress</span>
+          </div>
+          <h3>RCoT-Diffusion-LLM</h3>
+          <p>Recurrent Chain-of-Thought reasoning inside a <strong>diffusion-based LLM</strong>. Iteratively denoises latent reasoning traces over Countdown, GSM8K, and other reasoning benchmarks — closing the gap between diffusion text models and autoregressive CoT baselines.</p>
+          <div class="tags"><span>Diffusion LLMs</span><span>Chain-of-Thought</span><span>PyTorch</span><span>Reasoning</span><span>Evaluation</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">CHECK24 · 2025</span>
+            <span class="badge"><span class="badge-dot"></span>Production · 80K req/wk</span>
+          </div>
+          <h3>DocGPT — Document RAG Platform</h3>
+          <p>Multi-vertical document extraction and chat platform. Multi-format ingestion (PDF / DOCX / PPT / Notion / web), hybrid BM25 + vector search on Weaviate, re-rankers, query rewriting, and a real-time monitoring dashboard.</p>
+          <div class="tags"><span>RAG</span><span>Weaviate</span><span>BM25</span><span>Re-ranking</span><span>FastAPI</span><span>Monitoring</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">CHECK24 · Autoteile · 2025</span>
+            <span class="badge subtle">Agentic</span>
+          </div>
+          <h3>Agentic OCR Pre-processing</h3>
+          <p>Scan-quality agent for the Reifen vertical: dewarping, deblurring, shadow / lighting correction, and content-aware routing. Improves downstream OCR + LLM extraction accuracy on noisy real-world scans.</p>
+          <div class="tags"><span>Agentic AI</span><span>OCR</span><span>Computer Vision</span><span>LangGraph</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">Fraunhofer IAIS · 2024–2025</span>
+            <span class="badge subtle">Research</span>
+          </div>
+          <h3>German Legal LLM</h3>
+          <p>End-to-end legal QA stack: 7,000+ curated QA pairs, PEFT (LoRA / QLoRA) fine-tuning via Unsloth, hybrid RAG with cross-encoder re-rankers, and automated RAGAS / DeepEval / LLM-as-a-Judge evaluation.</p>
+          <div class="tags"><span>LLM Fine-tuning</span><span>LoRA</span><span>QLoRA</span><span>RAG</span><span>RAGAS</span><span>DeepEval</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">Fraunhofer IVI · 2024</span>
+            <span class="badge subtle">MLOps</span>
+          </div>
+          <h3>Autonomous Driving Signal Monitoring</h3>
+          <p>Geospatial MLOps platform on TimescaleDB + OpenStreetMap. Real-time AD-drop and RSU status dashboards, retention policies, and integrity constraints — query latency cut by 40%.</p>
+          <div class="tags"><span>TimescaleDB</span><span>Grafana</span><span>OpenStreetMap</span><span>MLOps</span><span>Geospatial</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">i2c · 2021–2023</span>
+            <span class="badge subtle">Fintech</span>
+          </div>
+          <h3>Real-time Fraud Detection</h3>
+          <p>Ensemble + deep models (XGBoost / LightGBM / TabNet / RNNs) for transaction fraud and ATO. Rolling-window feature engineering across minute-to-30-day windows; +40% fraud captured at 1:5 false-positive odds.</p>
+          <div class="tags"><span>XGBoost</span><span>LightGBM</span><span>TabNet</span><span>RNNs</span><span>Real-time ML</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section alt" id="skills">
+    <div class="container">
+      <p class="section-eyebrow">04 — Technical Skills</p>
+      <h2 class="section-title">My toolkit.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>LLMs &amp; Agentic AI</h3>
+          <ul class="chips">
+            <li>LLM Fine-tuning</li><li>PEFT</li><li>LoRA</li><li>QLoRA</li><li>Unsloth</li>
+            <li>RAG</li><li>Hybrid Retrieval (BM25 + Vector)</li><li>Re-ranking</li><li>Query Rewriting</li>
+            <li>Prompt Engineering</li><li>LangGraph</li><li>LangChain</li><li>LlamaIndex</li>
+            <li>OpenAI API</li><li>Hugging Face Transformers</li><li>Diffusion LLMs</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>ML / DL / NLP</h3>
+          <ul class="chips">
+            <li>PyTorch</li><li>scikit-learn</li><li>XGBoost</li><li>LightGBM</li>
+            <li>TabNet</li><li>RNNs / Transformers</li><li>Feature Engineering</li>
+            <li>A/B Testing</li><li>Evaluation (RAGAS, DeepEval, LLM-as-a-Judge)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Backend &amp; Data</h3>
+          <ul class="chips">
+            <li>Python</li><li>FastAPI</li><li>REST APIs</li>
+            <li>PostgreSQL</li><li>TimescaleDB</li><li>Redis</li><li>PySpark</li>
+            <li>Weaviate</li><li>Vector Databases</li><li>Kafka</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>MLOps &amp; Cloud</h3>
+          <ul class="chips">
+            <li>Docker</li><li>Kubernetes</li><li>CI/CD</li>
+            <li>MLflow</li><li>Kubeflow</li><li>AWS</li><li>Azure</li>
+            <li>Grafana</li><li>Monitoring &amp; Observability</li><li>Git</li><li>Agile</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-eyebrow">05 — Education</p>
+      <h2 class="section-title">Academic background.</h2>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-period">Oct 2024 — Apr 2026</div>
+          <h3>M.Sc. Applied Data Science</h3>
+          <p class="edu-org">Georg-August-Universität, Göttingen, Germany</p>
+          <p>Thesis: <em>Recurrent Chain-of-Thought reasoning in Diffusion-based LLMs</em> — exploring iterative latent reasoning on Countdown, GSM8K, and reasoning benchmarks.</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-period">Oct 2016 — Aug 2020</div>
+          <h3>B.Sc. Mathematics &amp; Economics</h3>
+          <p class="edu-org">LUMS, Lahore, Pakistan</p>
+          <p>Quantitative foundation across statistics, optimisation, econometrics — the backbone of my ML work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section alt" id="contact">
+    <div class="container contact-wrap">
+      <p class="section-eyebrow">06 — Contact</p>
+      <h2 class="section-title">Let's <span class="grad">build</span> something.</h2>
+      <p class="contact-lead">
+        I'm open to <strong>AI Engineer</strong>, <strong>LLM Engineer</strong>, <strong>ML Engineer</strong>,
+        and <strong>Applied Scientist</strong> roles in Germany / EU — onsite, hybrid or remote.
+        Notice period: 30 days. Valid German work permit.
+      </p>
+      <div class="contact-cards">
+        <a class="c-card" href="mailto:mrehank209@gmail.com">
+          <span>Email</span><strong>mrehank209@gmail.com</strong>
+        </a>
+        <a class="c-card" href="https://www.linkedin.com/in/muhammad-rehan-khalid/" target="_blank" rel="noopener">
+          <span>LinkedIn</span><strong>/in/muhammad-rehan-khalid</strong>
+        </a>
+        <a class="c-card" href="https://github.com/MRehanK209" target="_blank" rel="noopener">
+          <span>GitHub</span><strong>@MRehanK209</strong>
+        </a>
+        <a class="c-card" href="tel:+4917686964208">
+          <span>Phone</span><strong>+49 176 8696 4208</strong>
+        </a>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:mrehank209@gmail.com?subject=Let's%20talk">Let's Work Together</a>
+        <a class="btn btn-ghost" href="assets/CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Muhammad Rehan Khalid · Munich, Germany</span>
+      <span class="muted">Built with HTML · CSS · a tiny bit of JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
