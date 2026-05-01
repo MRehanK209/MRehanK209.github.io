@@ -9,6 +9,15 @@ links?.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => links.classList.remove('open'))
 );
 
+// theme toggle (default applied pre-paint by inline script in <head>)
+const themeToggle = document.getElementById('themeToggle');
+themeToggle?.addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme') || 'light';
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('theme', next); } catch (e) {}
+});
+
 // active link highlight on scroll
 const sectionIds = ['about','experience','projects','skills','education','contact'];
 const sections = sectionIds
