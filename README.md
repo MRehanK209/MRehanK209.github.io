@@ -1,8 +1,5 @@
 # Muhammad Rehan Khalid — Portfolio
 
-Personal portfolio site (single page, no build step).
-Inspired by [malihamza.github.io](https://malihamza.github.io/), restyled and rewritten for an AI Engineer / LLM Systems profile.
-
 ## Files
 
 | Path                   | Purpose                                |
@@ -31,10 +28,9 @@ python3 -m http.server 8000
 5. Site goes live at `https://MRehanK209.github.io/` in ~1 minute.
 
 ```bash
-# one-shot from this directory:
 git init -b main
 git add .
-git commit -m "Initial portfolio"
+git commit -m "<Commit Message>"
 git remote add origin git@github.com:MRehanK209/MRehanK209.github.io.git
 git push -u origin main
 ```
@@ -44,11 +40,4 @@ git push -u origin main
 - **Profile picture** — replace `assets/profile.png`.
 - **CV** — replace `assets/CV.pdf` (kept at the same path so the link doesn't break).
 - **Social links** — search `index.html` for `MRehanK209`, `mrehank209@gmail.com`, and the LinkedIn URL.
-- **Accent colours** — edit the `:root` block at the top of `style.css` (`--accent`, `--accent-2`, `--grad`).
 - **Add a project** — copy any `<article class="project">` block in the Projects section.
-- **Add a role** — copy any `<li class="t-item">` block in the Experience timeline.
-
-## SEO
-
-Title, description, keywords and Open Graph tags are pre-filled in `<head>` for AI Engineer / LLM / RAG / MLOps recruiter searches.
-Update the `og:image` URL once deployed if you want a richer LinkedIn / Slack preview.
