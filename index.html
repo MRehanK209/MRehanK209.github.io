@@ -85,12 +85,12 @@
         <h1>
           Hi, I'm <span class="grad">Muhammad Rehan Khalid</span>.
         </h1>
-        <h2 class="hero-sub">AI Engineer · LLM Systems · Agentic AI · MLOps</h2>
+        <h2 class="hero-sub">LLM / Agentic AI Engineer · Production RAG &amp; Multi-Agent Systems</h2>
         <p class="hero-lead">
           I build production-grade <strong>LLM systems</strong>, <strong>RAG pipelines</strong>, and
           <strong>agentic workflows</strong> that ship to real users. Currently shipping
           <strong>DocGPT</strong> at <strong>CHECK24</strong> — serving 80K+ weekly API requests across
-          multiple verticals — while pursuing my MSc in Applied Data Science at the
+          multiple verticals — after completing my MSc in Applied Data Science at the
           University of Göttingen.
         </p>
         <div class="hero-ctas">
@@ -102,7 +102,7 @@
           <div><strong>5+</strong><span>Years experience</span></div>
           <div><strong>80K+</strong><span>Weekly API requests shipped</span></div>
           <div><strong>24K</strong><span>QA pairs · German Legal LLM (LLaMA-3 / Gemma)</span></div>
-          <div><strong>$150K</strong><span>Annual fraud loss reduction</span></div>
+          <div><strong>$40M</strong><span>Estimated fraud savings (i2c)</span></div>
         </div>
         <div class="hero-socials">
           <a href="mailto:mrehank209@gmail.com" aria-label="Email">
@@ -129,7 +129,7 @@
           <img src="assets/profile.png" alt="Muhammad Rehan Khalid" />
         </div>
         <div class="badge-stack">
-          <span class="badge"><span class="badge-dot"></span> Available May 2026</span>
+          <span class="badge"><span class="badge-dot"></span> Open to opportunities</span>
           <span class="badge subtle">Munich · Remote · Hybrid</span>
         </div>
       </div>
@@ -153,17 +153,17 @@
           </p>
           <p>
             Right now I'm at <strong>CHECK24</strong> building the
-            <strong>DocGPT</strong> RAG platform — multi-format ingestion (PDF / DOCX / PPT / Notion / web),
-            hybrid BM25 + vector retrieval on Weaviate, a graph-based agentic orchestration
-            layer, and OCR pre-processing for the Autoteile vertical. I previously fine-tuned
+            <strong>DocGPT</strong> RAG platform — multi-format document support,
+            hybrid retrieval on Weaviate, a DAG-based agent-workflow engine, and
+            OCR pre-processing for the Autoteile vertical. I previously fine-tuned
             <strong>LLaMA-3</strong> and <strong>Gemma</strong> with LoRA + RAFT for a German legal QA platform at
-            <strong>Fraunhofer IAIS</strong>, and built geospatial MLOps dashboards at
-            <strong>Fraunhofer IVI</strong>.
+            <strong>Fraunhofer IAIS</strong>, where I also built real-time monitoring dashboards
+            (Grafana, TimescaleDB, PostGIS) for autonomous-driving telemetry.
           </p>
           <p>
-            My MSc thesis explores <strong>Recurrent Chain-of-Thought reasoning in
-            Diffusion-based LLMs</strong> — pushing reasoning quality on tasks like Countdown
-            and GSM8K beyond standard autoregressive baselines.
+            My completed MSc thesis investigated <strong>Recurrent Chain-of-Thought reasoning in
+            Diffusion-based LLMs</strong> — studying iterative latent reasoning on tasks like Countdown
+            and GSM8K against autoregressive baselines.
           </p>
           <p class="about-tags">
             <span>LLM Fine-tuning (LoRA · QLoRA · PEFT)</span>
@@ -182,9 +182,9 @@
           </div>
 <pre class="terminal-body"><code><span class="tk-p">{</span>
   <span class="tk-k">"name"</span>: <span class="tk-s">"Muhammad Rehan Khalid"</span>,
-  <span class="tk-k">"role"</span>: <span class="tk-s">"AI Engineer · LLM Systems"</span>,
+  <span class="tk-k">"role"</span>: <span class="tk-s">"LLM / Agentic AI Engineer"</span>,
   <span class="tk-k">"location"</span>: <span class="tk-s">"Munich, Germany"</span>,
-  <span class="tk-k">"current"</span>: <span class="tk-s">"Data Science Intern (LLM) @ CHECK24"</span>,
+  <span class="tk-k">"current"</span>: <span class="tk-s">"AI Engineer @ AI Forge, CHECK24"</span>,
   <span class="tk-k">"education"</span>: <span class="tk-s">"M.Sc. Applied Data Science, Göttingen"</span>,
   <span class="tk-k">"focus"</span>: <span class="tk-p">[</span>
     <span class="tk-s">"LLM Fine-tuning"</span>,
@@ -199,9 +199,9 @@
     <span class="tk-s">"Docker"</span>, <span class="tk-s">"Kubernetes"</span>, <span class="tk-s">"AWS"</span>
   <span class="tk-p">]</span>,
   <span class="tk-k">"languages"</span>: <span class="tk-p">[</span>
-    <span class="tk-s">"English (Native)"</span>,
-    <span class="tk-s">"German (B1, learning)"</span>,
-    <span class="tk-s">"Urdu (Native)"</span>
+    <span class="tk-s">"Urdu (Native)"</span>,
+    <span class="tk-s">"English (Professional Working)"</span>,
+    <span class="tk-s">"German (Limited Working)"</span>
   <span class="tk-p">]</span>,
   <span class="tk-k">"work_permit"</span>: <span class="tk-s">"Valid (Germany)"</span>,
   <span class="tk-k">"notice_period"</span>: <span class="tk-s">"30 days"</span>,
@@ -227,60 +227,39 @@
           </div>
           <div class="t-card">
             <header class="t-head">
-              <h3>Data Science Intern — LLM</h3>
+              <h3>AI Engineer @ AI Forge</h3>
               <a class="t-org" href="https://www.check24.de/" target="_blank" rel="noopener">CHECK24 Vergleichsportal GmbH ↗</a>
             </header>
             <p class="t-project"><strong>DocGPT</strong> — AI document extraction &amp; chat platform deployed across CHECK24 verticals.</p>
             <ul>
-              <li>Built a <strong>graph-based orchestration layer</strong> for agentic document processing — multi-step workflows (classification → targeted extraction) with flexible chaining of extraction use cases inside a unified system.</li>
-              <li>Implemented the <strong>Retrieval-Augmented Generation</strong> module enabling long-document support beyond LLM context limits, onboarding new CHECK24 verticals.</li>
-              <li>Built multi-format ingestion (PDF, DOCX, PPT, web, Notion) with cleaning, deduplication, metadata tagging and chunking; embeddings stored in <strong>Weaviate</strong> for fast semantic retrieval.</li>
-              <li>Developed <strong>hybrid retrieval</strong> with BM25 + vector search, re-ranking, and query rewriting — improving grounded Q&amp;A and structured invoice / contract extraction into normalized JSON.</li>
-              <li>Enabled onboarding of <strong>CHECK24 Autoteile (Reifen)</strong> with an agentic scan-preprocessing pipeline (dewarp, deblur, lighting / shadow correction) — supporting <strong>~1K production API calls / day</strong>.</li>
-              <li>Shipped a real-time <strong>monitoring dashboard</strong> for request volume, latency and error rates — reducing 5xx errors by ~15% and helping scale to <strong>80K+ weekly API requests</strong>.</li>
+              <li>Architected and maintained a production <strong>LLM platform</strong> handling <strong>80K+ weekly API requests</strong> — with RAG, multi-provider routing, guardrails, and observability.</li>
+              <li>Built a configurable <strong>DAG-based workflow engine</strong> for multi-step agent pipelines, onboarding <strong>4 CHECK24 verticals</strong>.</li>
+              <li>Improved hybrid-RAG retrieval <strong>precision@5 by 18%</strong> in <strong>Weaviate</strong> via optimized chunking, metadata filtering, and re-ranking.</li>
+              <li>Built a <strong>ReAct image-preprocessing agent</strong> and <strong>LangGraph</strong> vision orchestrator on <strong>Azure OpenAI</strong>, raising OCR-ready document quality by <strong>23%</strong> and serving <strong>~1K daily Autoteile requests</strong>.</li>
+              <li>Reduced average <strong>LLM cost per request by 22%</strong> through observability dashboards that guide routing and prompt optimization.</li>
             </ul>
-            <div class="tags"><span>Python</span><span>LLMs</span><span>RAG</span><span>Weaviate</span><span>LangChain</span><span>FastAPI</span><span>AWS</span><span>Docker</span><span>CI/CD</span></div>
+            <div class="tags"><span>Python</span><span>LLMs</span><span>RAG</span><span>Weaviate</span><span>LangGraph</span><span>FastAPI</span><span>Azure OpenAI</span><span>Docker</span></div>
           </div>
         </li>
 
         <li class="t-item">
           <div class="t-meta">
-            <span class="t-period">Dec 2024 — Jun 2025</span>
+            <span class="t-period">Jan 2024 — Jun 2025</span>
             <span class="t-loc">Sankt Augustin, Germany</span>
           </div>
           <div class="t-card">
             <header class="t-head">
-              <h3>Research Assistant — LLM</h3>
+              <h3>AI Engineer</h3>
               <a class="t-org" href="https://www.iais.fraunhofer.de/" target="_blank" rel="noopener">Fraunhofer IAIS ↗</a>
             </header>
-            <p class="t-project"><strong>German Legal AI Assistant</strong> — NLP-driven legal QA platform trained on <strong>30K+ documents</strong> for internal enterprise use.</p>
+            <p class="t-project"><strong>German Legal AI Assistant</strong> &amp; <strong>Autonomous Driving Signal Monitoring</strong> — grounded legal QA over <strong>70GB / 30K+ documents</strong>, plus real-time telemetry observability.</p>
             <ul>
-              <li>Fine-tuned <strong>LLaMA-3</strong> and <strong>Gemma</strong> with <strong>LoRA</strong> on <strong>23,905 QA pairs</strong> — lifting model accuracy from <strong>36.8% → 56.4%</strong>.</li>
-              <li>Designed a <strong>retrieval-augmented fine-tuning (RAFT)</strong> approach — improving factual correctness by <strong>20%</strong> and significantly reducing hallucinations.</li>
-              <li>Built a multi-step <strong>RAG pipeline</strong> with advanced retrieval and re-ranking — boosting answer precision by <strong>25%</strong> and context recall by <strong>30%</strong>.</li>
-              <li>Evaluated and optimised response quality with <strong>LLM-as-a-Judge</strong> (plus RAGAS / DeepEval) — <strong>+50%</strong> response-relevance uplift.</li>
+              <li>Built an <strong>agentic RAG pipeline</strong> over <strong>70GB of legal data</strong> for grounded German legal question answering.</li>
+              <li>Fine-tuned <strong>LLaMA-3</strong> and <strong>Gemma</strong> with <strong>LoRA</strong>, improving German legal QA accuracy from <strong>36.8% → 56.4%</strong>.</li>
+              <li>Generated a <strong>23,905-pair</strong> instruction dataset and applied <strong>RAFT</strong> with <strong>LLM-as-a-Judge</strong> evaluation for a <strong>20%</strong> gain in correctness.</li>
+              <li>Delivered real-time telemetry observability for autonomous-driving systems — <strong>Grafana</strong> dashboards on <strong>TimescaleDB</strong> / PostgreSQL over GPS, RSU status, and network-quality signals — cutting dashboard / alerting query latency by <strong>~40%</strong> via optimized TimescaleDB and PostGIS queries.</li>
             </ul>
-            <div class="tags"><span>LLaMA-3</span><span>Gemma</span><span>PEFT</span><span>LoRA</span><span>RAFT</span><span>Unsloth</span><span>PyTorch</span><span>RAGAS</span><span>DeepEval</span><span>RAG</span></div>
-          </div>
-        </li>
-
-        <li class="t-item">
-          <div class="t-meta">
-            <span class="t-period">Jan 2024 — Nov 2024</span>
-            <span class="t-loc">Dresden, Germany</span>
-          </div>
-          <div class="t-card">
-            <header class="t-head">
-              <h3>Research Assistant — MLOps</h3>
-              <a class="t-org" href="https://www.ivi.fraunhofer.de/" target="_blank" rel="noopener">Fraunhofer IVI ↗</a>
-            </header>
-            <p class="t-project"><strong>Autonomous Driving Signal Monitoring</strong> — geospatial MLOps for AD-drop and Roadside-Unit (RSU) status.</p>
-            <ul>
-              <li>Built <strong>Grafana</strong> dashboards for AD signal quality and AD-drop monitoring on top of OpenStreetMap data, enabling real-time outage alerting.</li>
-              <li>Enriched <strong>TimescaleDB</strong> datasets with RSU and bus-stop metadata, reducing query latency by <strong>40%</strong>.</li>
-              <li>Hardened TimescaleDB workflows with retention policies and integrity constraints to improve reliability.</li>
-            </ul>
-            <div class="tags"><span>Python</span><span>Grafana</span><span>TimescaleDB</span><span>PostgreSQL</span><span>OpenStreetMap</span></div>
+            <div class="tags"><span>LLaMA-3</span><span>Gemma</span><span>LoRA</span><span>RAFT</span><span>RAG</span><span>LLM-as-a-Judge</span><span>Grafana</span><span>TimescaleDB</span><span>PostGIS</span></div>
           </div>
         </li>
 
@@ -291,17 +270,18 @@
           </div>
           <div class="t-card">
             <header class="t-head">
-              <h3>Data Analyst</h3>
+              <h3>Machine Learning Engineer</h3>
               <a class="t-org" href="https://www.i2cinc.com/" target="_blank" rel="noopener">i2c Inc. ↗</a>
             </header>
-            <p class="t-project"><strong>AI Fraud Detection Platform</strong> — real-time transaction monitoring used by US financial institutions.</p>
+            <p class="t-project"><strong>GenAI Chatbot &amp; AI Fraud Detection Platform</strong> — production LLM chatbot and real-time Card-Not-Present fraud ML.</p>
             <ul>
-              <li>Led fraud-detection projects with ensemble models (<strong>XGBoost</strong>, <strong>LightGBM</strong>) and neural nets (<strong>TabNet</strong>, RNNs) — capturing <strong>40% more fraud at 1:5 FP odds</strong>.</li>
-              <li>Optimised feature pipelines — cutting processing time from <strong>5 hours → 10 minutes</strong> and improving data freshness by <strong>95%</strong>.</li>
-              <li>Deployed real-time fraud-prevention models, reducing annual losses by <strong>$150K</strong> and improving detection response on high-risk transactions.</li>
-              <li>Engineered profiling pipelines generating rolling-window features (minutes → 30 days); reduced class imbalance from <strong>1:1000 to 1:100</strong> via principled sampling.</li>
+              <li>Led an <strong>LLM chatbot</strong> from POC to production in 2 months, automating <strong>25%</strong> of customer queries.</li>
+              <li>Built a <strong>RAG pipeline</strong> with semantic ranking (HuggingFace embeddings), improving context recall by <strong>16%</strong> and precision by <strong>10%</strong>.</li>
+              <li>Contributed to <strong>~$40M</strong> in estimated fraud savings by strengthening real-time risk decisions on Card-Not-Present transactions.</li>
+              <li>Engineered statistical moving-average and behavioural features for real-time fraud scoring — a <strong>20%</strong> stronger fraud signal and a <strong>30%</strong> lift in Account Takeover detection.</li>
+              <li>Reduced fraud-class imbalance from <strong>1:1000 to 1:100</strong> with a data-sampling pipeline, stabilising model training convergence.</li>
             </ul>
-            <div class="tags"><span>Python</span><span>XGBoost</span><span>LightGBM</span><span>TabNet</span><span>Feature Engineering</span><span>PostgreSQL</span></div>
+            <div class="tags"><span>Python</span><span>LLMs</span><span>RAG</span><span>HuggingFace</span><span>XGBoost</span><span>Feature Engineering</span><span>Kafka</span><span>PostgreSQL</span></div>
           </div>
         </li>
 
@@ -317,9 +297,9 @@
             </header>
             <p class="t-project"><strong>Customer Propensity Modelling Platform</strong> — customer ranking and experimentation engine for revenue optimisation.</p>
             <ul>
-              <li>Built <strong>LightGBM</strong>-based propensity models to rank high-value customers and support targeted revenue-optimisation decisions — driving a <strong>+10% revenue lift</strong>.</li>
-              <li>Designed propensity-scoring features from customer interaction and behavioural data — enabling more precise segmentation of high-potential customers.</li>
-              <li>Ran A/B tests and ROI analyses contributing to a <strong>+6% client-side sales</strong> uplift.</li>
+              <li>Delivered a <strong>10% incremental revenue lift</strong> vs FIFO routing, measured through production ON/OFF A/B testing of AI-based customer–agent pairing.</li>
+              <li>Improved next-purchase propensity prediction, raising <strong>ROC-AUC from 0.72 → 0.81</strong> with <strong>LightGBM</strong> models on engineered customer, interaction, call-center, and demographic features.</li>
+              <li>Enabled a <strong>6% sales uplift</strong> by integrating customer purchase-probability scores into the matching platform to prioritise customers by predicted conversion likelihood.</li>
             </ul>
             <div class="tags"><span>Python</span><span>LightGBM</span><span>Propensity Modelling</span><span>Feature Engineering</span><span>A/B Testing</span></div>
           </div>
@@ -339,11 +319,11 @@
 
         <article class="project">
           <div class="project-head">
-            <span class="project-tag">Master Thesis · 2025–2026</span>
-            <span class="badge subtle">In progress</span>
+            <span class="project-tag">Master Thesis · 2026</span>
+            <span class="badge subtle">Completed</span>
           </div>
           <h3>RCoT-Diffusion-LLM</h3>
-          <p>Recurrent Chain-of-Thought reasoning inside a <strong>diffusion-based LLM</strong>. Iteratively denoises latent reasoning traces over Countdown, GSM8K, and other reasoning benchmarks — closing the gap between diffusion text models and autoregressive CoT baselines.</p>
+          <p>Recurrent Chain-of-Thought reasoning inside a <strong>diffusion-based LLM</strong>. Iteratively denoises latent reasoning traces over Countdown, GSM8K, and other reasoning benchmarks, studied against autoregressive CoT baselines.</p>
           <div class="tags"><span>Diffusion LLMs</span><span>Chain-of-Thought</span><span>PyTorch</span><span>Reasoning</span><span>Evaluation</span></div>
         </article>
 
@@ -373,8 +353,8 @@
             <span class="badge"><span class="badge-dot"></span>Production · 80K req/wk</span>
           </div>
           <h3>DocGPT — Document RAG Platform</h3>
-          <p>Multi-vertical document extraction and chat platform. Multi-format ingestion (PDF / DOCX / PPT / Notion / web), hybrid BM25 + vector search on Weaviate, re-rankers, query rewriting, and a real-time monitoring dashboard.</p>
-          <div class="tags"><span>RAG</span><span>Weaviate</span><span>BM25</span><span>Re-ranking</span><span>FastAPI</span><span>Monitoring</span></div>
+          <p>Multi-vertical document extraction and chat platform across 4 CHECK24 verticals. Multi-format document ingestion, hybrid (keyword + vector) retrieval on Weaviate with optimized chunking, metadata filtering and re-rankers, and a real-time observability dashboard.</p>
+          <div class="tags"><span>RAG</span><span>Weaviate</span><span>Hybrid Retrieval</span><span>Re-ranking</span><span>FastAPI</span><span>Monitoring</span></div>
         </article>
 
         <article class="project">
@@ -393,18 +373,18 @@
             <span class="badge subtle">Research</span>
           </div>
           <h3>German Legal LLM</h3>
-          <p>End-to-end legal QA stack on <strong>30K+</strong> documents: <strong>LLaMA-3 / Gemma</strong> fine-tuned with LoRA on 23,905 QA pairs (<strong>36.8 → 56.4%</strong> accuracy), <strong>RAFT</strong> for factuality, multi-step RAG with re-ranking (<strong>+25% precision, +30% recall</strong>), and automated LLM-as-a-Judge evaluation.</p>
+          <p>End-to-end legal QA stack on <strong>70GB / 30K+</strong> documents: <strong>LLaMA-3 / Gemma</strong> fine-tuned with LoRA on 23,905 QA pairs (<strong>36.8 → 56.4%</strong> accuracy), <strong>RAFT</strong> for factuality (<strong>+20% correctness</strong>), multi-step RAG with re-ranking, and automated LLM-as-a-Judge evaluation.</p>
           <div class="tags"><span>LLaMA-3</span><span>Gemma</span><span>LoRA</span><span>RAFT</span><span>RAG</span><span>RAGAS</span><span>DeepEval</span></div>
         </article>
 
         <article class="project">
           <div class="project-head">
-            <span class="project-tag">Fraunhofer IVI · 2024</span>
-            <span class="badge subtle">MLOps</span>
+            <span class="project-tag">Fraunhofer IAIS · 2024–2025</span>
+            <span class="badge subtle">Observability</span>
           </div>
           <h3>Autonomous Driving Signal Monitoring</h3>
-          <p>Geospatial MLOps platform on TimescaleDB + OpenStreetMap. Real-time AD-drop and RSU status dashboards, retention policies, and integrity constraints — query latency cut by 40%.</p>
-          <div class="tags"><span>TimescaleDB</span><span>Grafana</span><span>OpenStreetMap</span><span>MLOps</span><span>Geospatial</span></div>
+          <p>Geospatial telemetry monitoring on TimescaleDB + PostGIS for autonomous driving. Real-time Grafana dashboards over GPS, RSU status, and network-quality signals — query latency cut by ~40% via optimized TimescaleDB / PostGIS queries.</p>
+          <div class="tags"><span>TimescaleDB</span><span>Grafana</span><span>PostgreSQL</span><span>PostGIS</span><span>Geospatial</span></div>
         </article>
 
         <article class="project">
@@ -413,8 +393,8 @@
             <span class="badge subtle">Fintech</span>
           </div>
           <h3>Real-time Fraud Detection</h3>
-          <p>Ensemble models (XGBoost / LightGBM / TabNet) for real-time transaction fraud — +40% fraud captured at 1:5 FP odds, $150K annual loss reduction, and feature pipeline optimised from <strong>5 h → 10 min</strong> (95% data-freshness gain).</p>
-          <div class="tags"><span>XGBoost</span><span>LightGBM</span><span>TabNet</span><span>Feature Engineering</span><span>PostgreSQL</span><span>Real-time ML</span></div>
+          <p>Gradient-boosted (<strong>XGBoost</strong>) models for real-time Card-Not-Present transaction fraud — contributing to <strong>~$40M</strong> estimated fraud savings, a <strong>20–30%</strong> stronger fraud signal, and feature-logging optimised from <strong>5 h → 10 min</strong> to unblock daily retraining.</p>
+          <div class="tags"><span>XGBoost</span><span>Scikit-Learn</span><span>Feature Engineering</span><span>PostgreSQL</span><span>Kafka</span><span>Real-time ML</span></div>
         </article>
 
       </div>
@@ -432,7 +412,7 @@
           <h3>LLMs &amp; Agentic AI</h3>
           <ul class="chips">
             <li>LLM Fine-tuning</li><li>PEFT</li><li>LoRA</li><li>QLoRA</li><li>RAFT</li><li>Unsloth</li>
-            <li>RAG</li><li>Hybrid Retrieval (BM25 + Vector)</li><li>Re-ranking</li><li>Query Rewriting</li>
+            <li>RAG</li><li>Hybrid Retrieval (BM25 + Vector)</li><li>Re-ranking</li><li>Reciprocal Rank Fusion (RRF)</li>
             <li>Prompt Engineering</li><li>LangGraph</li><li>LangChain</li><li>LlamaIndex</li>
             <li>OpenAI API</li><li>Hugging Face Transformers</li><li>Diffusion LLMs</li>
             <li>LLaMA-3</li><li>Gemma</li>
@@ -442,7 +422,7 @@
           <h3>ML / DL / NLP</h3>
           <ul class="chips">
             <li>PyTorch</li><li>scikit-learn</li><li>XGBoost</li><li>LightGBM</li>
-            <li>TabNet</li><li>RNNs / Transformers</li><li>Feature Engineering</li>
+            <li>BERT / Transformers</li><li>Feature Engineering</li>
             <li>A/B Testing</li><li>Evaluation (RAGAS, DeepEval, LLM-as-a-Judge)</li>
           </ul>
         </div>
@@ -450,7 +430,7 @@
           <h3>Backend &amp; Data</h3>
           <ul class="chips">
             <li>Python</li><li>FastAPI</li><li>REST APIs</li>
-            <li>PostgreSQL</li><li>TimescaleDB</li><li>Redis</li><li>PySpark</li>
+            <li>PostgreSQL</li><li>TimescaleDB</li><li>Redis</li><li>Spark</li>
             <li>Weaviate</li><li>Vector Databases</li><li>Kafka</li>
           </ul>
         </div>
@@ -458,8 +438,8 @@
           <h3>MLOps &amp; Cloud</h3>
           <ul class="chips">
             <li>Docker</li><li>Kubernetes</li><li>CI/CD</li>
-            <li>MLflow</li><li>Kubeflow</li><li>AWS</li><li>Azure</li>
-            <li>Grafana</li><li>Monitoring &amp; Observability</li><li>Git</li><li>Agile</li>
+            <li>MLflow</li><li>Airflow</li><li>AWS</li><li>Azure</li>
+            <li>Grafana</li><li>Monitoring &amp; Observability</li><li>Git</li>
           </ul>
         </div>
       </div>
@@ -474,16 +454,16 @@
 
       <div class="edu-grid">
         <div class="edu-card">
-          <div class="edu-period">Oct 2024 — Apr 2026</div>
+          <div class="edu-period">Jan 2024 — Apr 2026</div>
           <h3>M.Sc. Applied Data Science</h3>
           <p class="edu-org">Georg-August-Universität, Göttingen, Germany</p>
-          <p>Thesis: <em>Recurrent Chain-of-Thought reasoning in Diffusion-based LLMs</em> — exploring iterative latent reasoning on Countdown, GSM8K, and reasoning benchmarks.</p>
+          <p>Thesis (completed): <em>Recurrent Chain-of-Thought reasoning in Diffusion-based LLMs</em> — iterative latent reasoning on Countdown, GSM8K, and reasoning benchmarks.</p>
         </div>
         <div class="edu-card">
-          <div class="edu-period">Oct 2016 — Aug 2020</div>
+          <div class="edu-period">Aug 2016 — Jul 2020</div>
           <h3>B.Sc. Mathematics &amp; Economics</h3>
-          <p class="edu-org">Lahore University of Management and Science (LUMS), Lahore, Pakistan</p>
-          <p>Quantitative foundation across statistics, optimisation, econometrics — the backbone of my ML work.</p>
+          <p class="edu-org">Lahore University of Management Sciences (LUMS), Lahore, Pakistan</p>
+          <p>Quantitative foundation across mathematics, statistics, and economics — the backbone of my ML work. Graduated with Distinction; Dean's Honor List.</p>
         </div>
       </div>
     </div>
